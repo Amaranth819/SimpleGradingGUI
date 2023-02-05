@@ -214,10 +214,12 @@ def ecvars_to_strs(ec_vars):
 '''
 def hw1_rubrics():
     q1 = Question('Q3(a)', 2)
+    q1.add_grade_details('Correct', 0)
     q1.add_grade_details('Partially correct (-0.5)', -0.5)
     q1.add_grade_details('No answer (-2)', -2)
     q2 = Question('Q3(b)', 3)
-    q2.add_grade_details('Partially correct (-1.5)', -1.5)
+    q2.add_grade_details('Correct', 0)
+    q2.add_grade_details('Partially correct (-1)', -1)
     q2.add_grade_details('No answer (-3)', -3)
 
     rubrics = Rubrics()
